@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <title>배경(background)</title>
+  <style>
+      #logo {
+          background: url('/image/coding.png') no-repeat;
+          width: 200px;
+          height: 215px;
+      }
+      .hidden_text {
+          display: none;
+      }
+
+      body{
+          background-image:url('/image/gradien.png');
+          background-repeat:repeat-x;
+      }
+      h1{
+          color:white;
+      }
+  </style>
+</head>
+
+<body>
+  <br><br><br><br><br><br>
+
+  example2.html - 조각 이미지를 이용해서 그라디언트 효과의 배경 만들기 <br>
+ <h1>Hello world​</h1> <br>
+
+
+  엘리먼트의 배경 <br>
+엘리먼트의 배경에 색상을 부여하거나 이미지를 표시하고 싶을 때 background 효과를 사용한다. <br>
+이 효과를 이용하면 배경에 사용된 이미지의 위치를 지정하거나, 반복 할 수 있다. <br>
+<br>
+<h2>배경색</h2>
+background-color:색상값 <br>
+Hex	16진수로 색상 값을 표현, #ff0000 (붉은색), #00ff00(초록), #0000ff(파랑) <br>
+RGB	붉은색, 초록, 파랑의 값을 조합해서 색상 값을 표현,  RGB(255,0,0), RGB(0,255,0), RGB(0,0,255) <br>
+별명	red, blue, green등 칼러코드 참고 <br><br>
+
+배경 이미지의 반복<br>
+background-repeat: 반복방식<br>
+
+repeat	수직, 수평 모두 반복함<br>
+repeat-x	수평만 반복함<br>
+repeat-y	수직만 반복함<br>
+no-repeat	반복하지 않음<br>
+참고 : w3school.com<br><br>
+
+배경 이미지의 위치<br>
+background-position: 위치값<br>
+
+left top<br>
+left center<br>
+left bottom<br>
+right top<br>
+right center<br>
+right bottom<br>
+center top<br>
+center centerv<br>
+center bottom	배경 위치를 지정<br><br>
+x% y%	x%는 수평위치를 y%는 수직 위치를 의미하고, 이미지의 상대적인 위치를 지정한다.<br>
+xpos ypos	이미지의 절대적인 위치를 지정한다.<br>
+단축속성<br>
+body {background:#00ffff url('image.png') no-repeat right top;} <br>
+
+  <div id="logo">
+        <span class="hidden_text">생활코딩</span>
+  </div>​
+  <br><br>
+
+
+
+</body>
+</html>
